@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Form validate</title>
+        <style>
+            div{
+                background-color: chartreuse;
+        
+              text-align: center;
+            }
+            </style>
+        <script>
+            function valid()
+            {
+                var username=document.getElementById("uname");                
+                var password=document.getElementById("pass");
+                if(username.value.trim()==""|| password.value.trim()=="")
+                {
+                    alert("Enter the user name and password");
+                    return false;
+                }
+                
+                else{
+                    true;
+
+                }
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        
+        <div>
+            <centre>
+        <form onsubmit="return valid()" action="dropdown.html">
+            <input id="uname" placeholder="User name" type="text" required/> 
+            <br></br>
+            <input id="pass" placeholder="password" type="password" required/> 
+
+            <br></br>            
+            <button  type="submit">submit</button>  
+
+
+        </form>
+    </centre>
+        </div>
+
+        
+        </body>
+
+</html>
